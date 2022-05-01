@@ -1,0 +1,478 @@
+:root {
+  --white: #fff;
+  --grey: #656565;
+  --green: #339710;
+  --yellow: #dda619;
+  --black: #3a3a3a;
+}
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@font-face {
+  font-family: "inter light";
+  src: url("../fonts/Inter/static/Inter-Light.ttf");
+}
+@font-face {
+  font-family: "inter medium";
+  src: url("../fonts/Inter/static/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: "inter regular";
+  src: url("../fonts/Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "inter semiBld";
+  src: url("../fonts/Inter/static/Inter-SemiBold.ttf");
+}
+@font-face {
+  font-family: "montserrat bold";
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "corben regular";
+  src: url("../fonts/Corben/Corben-Regular.ttf");
+}
+a:link,
+a:visited {
+  color: var(--grey);
+  font-size: 1.8rem;
+  font-family: "inter light";
+  font-weight: 300;
+  text-decoration: underline transparent;
+  text-transform: capitalize;
+  line-height: 131.5%;
+  vertical-align: top;
+}
+a:hover,
+a:active {
+  color: var(--green);
+  font-family: "inter medium";
+  font-weight: 500;
+  text-decoration: underline;
+}
+body {
+  padding: 2.6rem 11.1rem;
+}
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 3rem;
+
+  list-style: none;
+}
+#active {
+  color: var(--green);
+  font-family: "inter medium";
+  font-weight: 500;
+  text-decoration: underline;
+}
+header button {
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+header .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.6rem;
+}
+/* SECTION VILLAGE CHOCKEN */
+.village-chicken {
+  display: flex;
+  margin-bottom: 9.36rem;
+}
+.village-chicken .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  position: relative;
+}
+.village-chicken .right {
+  width: 50%;
+}
+.village-chicken h2 {
+  color: var(--green);
+  font-size: 7rem;
+  font-family: "montserrat bold";
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 101.5%;
+}
+.village-chicken h2 span {
+  display: block;
+}
+.village-chicken p {
+  color: var(--black);
+  font-size: 1.6rem;
+  line-height: 131.5%;
+}
+.village-chicken button {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-family: "inter semiBold";
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  width: 18.5rem;
+  height: 5.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  box-shadow: 1.5rem 1.5rem 30 0 rgba(252, 201, 125, 0.3);
+  cursor: pointer;
+}
+.left img {
+  position: absolute;
+  top: 21rem;
+  left: 20rem;
+}
+.right img {
+  width: 100%;
+}
+/* SECTION TASTE */
+.taste-food {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+}
+.taste-food-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.9rem;
+  width: 33.33%;
+}
+.taste-food-section h3 {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.taste-food-section p {
+  color: var(--black);
+  font-size: 1rem;
+  font-family: "inter light";
+  font-weight: 300;
+}
+.taste-food-section img {
+  width: 6rem;
+  height: 6rem;
+}
+/* SECTION grilled-chicken */
+.grilled-chicken {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+}
+.grilled-chicken-right > p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.grilled-chicken-right > p > span {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+}
+.grilled-chicken-right > h3 {
+  color: var(--black);
+  font-size: 4rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.grilled-chicken-right > p {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-family: "inter light";
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.grilled-chicken-right > button {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-family: "inter semiBold";
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  width: 18.5rem;
+  height: 5.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  box-shadow: 1.5rem 1.5rem 30 0 rgba(252, 201, 125, 0.3);
+  cursor: pointer;
+}
+/* SECTION chicken-combo */
+.chicken-combo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+}
+.chicken-combo-left > p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.chicken-combo-left > p > span {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+}
+.chicken-combo-left > h3 {
+  color: var(--black);
+  font-size: 4rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.chicken-combo-left > p {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-family: "inter light";
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.chicken-combo-left > button {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-family: "inter semiBold";
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  width: 18.5rem;
+  height: 5.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  box-shadow: 1.5rem 1.5rem 30 0 rgba(252, 201, 125, 0.3);
+  cursor: pointer;
+}
+/* SECTION crunchy-feel */
+.crunchy-feel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+}
+.crunchy-feel-right > p {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.crunchy-feel-right > p > span {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+}
+.crunchy-feel-right > h3 {
+  color: var(--black);
+  font-size: 4rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.crunchy-feel-right > p {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-family: "inter light";
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.crunchy-feel-right > button {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-family: "inter semiBold";
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  width: 18.5rem;
+  height: 5.6rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  box-shadow: 1.5rem 1.5rem 30 0 rgba(252, 201, 125, 0.3);
+  cursor: pointer;
+}
+/* SECTION people */
+.people {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9.36rem;
+  gap: 3rem;
+  background-color: rgba(51, 151, 16, 0.1);
+  border-radius: 5rem;
+  padding: 4rem 7rem;
+  position: relative;
+}
+.people::after {
+  position: absolute;
+  top: -5rem;
+  right: 5rem;
+  content: url(../img/Group_57.svg);
+}
+.people > h3 {
+  color: var(--black);
+  font-size: 4rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.people > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+.people-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.9rem;
+  width: 33.33%;
+  width: 50%;
+}
+.people-section h3 {
+  color: var(--green);
+  font-size: 1.8rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.people-section p {
+  color: var(--black);
+  font-size: 1rem;
+  font-family: "inter light";
+  font-weight: 300;
+}
+.people-section img {
+  width: 6rem;
+  height: 6rem;
+}
+/* SECTION stay-updated */
+.stay-updated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  margin-bottom: 9.36rem;
+  position: relative;
+}
+.stay-updated::before {
+  position: absolute;
+  content: url(../img/52.svg);
+  top: 5rem;
+  left: -10rem;
+}
+.stay-updated > h3 {
+  color: var(--black);
+  font-size: 3.6rem;
+  font-family: "corben regular";
+  font-weight: 400;
+  line-height: 101.5%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.stay-updated > p {
+  color: var(--black);
+  font-size: 1.8rem;
+  font-family: "inter light";
+  font-weight: 300;
+  line-height: 101.5%;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.stay-updated > form > button {
+  color: var(--yellow);
+  font-size: 1.8rem;
+  font-family: "inter semiBold";
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  width: 7rem;
+  height: 7rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--yellow);
+  box-shadow: 1.5rem 1.5rem 30 0 rgba(252, 201, 125, 0.3);
+  cursor: pointer;
+}
+.stay-updated > form > button > img {
+  width: 3rem;
+  height: 3rem;
+}
+.stay-updated > form > input[type="text"] {
+  font-size: 2.2rem;
+  font-family: "poppins";
+  text-transform: capitalize;
+  border: 1.5px solid rgba(51, 151, 16, 0.3);
+  border-radius: 3rem;
+  height: 7.6rem;
+  width: 31.4rem;
+  padding: 0 0 0 72px;
+  outline: 0;
+  background-color: rgba(255, 249, 240, 0.1);
+  box-shadow: 0 12px 40px -16px rgba(0, 0, 0, 0.1);
+}
+.stay-updated > form > input[type="text"]::placeholder {
+  color: rgba(51, 151, 16, 0.3);
+  font-size: 1.8rem;
+  font-family: "inter regular";
+  font-weight: 400;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: var(--grey);
+  font-size: 1.2rem;
+  font-family: "inter regular";
+  font-weight: 400;
+}
+.social {
+  display: flex;
+  gap: 1rem;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
